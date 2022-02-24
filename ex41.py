@@ -6,21 +6,21 @@
 from datetime import date
 
 at = date.today().year
-ano = int(input('Digite ano de nascimento: '))
+ano = int(input('Digite o ano de nascimento: '))
 res = int(at - ano)
 if res <= 0:
     print("Ano de nascimento inválido!!!")
 else:
     if res <= 9:
-        print('Atleta categoria Mirim.')
+        print('Atleta da categoria Mirim.')
     elif  9 > res <= 14:
-        print('Atleta categoria Infantil.')
+        print('Atleta da categoria Infantil.')
     elif 14 > res <= 19:
-        print('Atleta categoria Junior.')
+        print('Atleta da categoria Junior.')
     elif 19 > res <= 25:
-        print('Atleta categoria Senior.')
+        print('Atleta da categoria Senior.')
     elif res > 25:
-        print('Atleta categoria Master.')
+        print('Atleta da categoria Master.')
 
 
 ####       CURSO     ######
